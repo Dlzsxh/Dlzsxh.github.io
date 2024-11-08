@@ -261,7 +261,7 @@
 
 <script>
     var GUEST_INFO = ['nick','mail','link'];
-    var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+    var guest_info = 'nick'.split(',').filter(function(item){
         return GUEST_INFO.indexOf(item) > -1
     });
     var notify = 'false' == true;
@@ -272,8 +272,8 @@
         verify: verify,
         appId: "KjhW7EFygYy8jBRziaY4S7tv-gzGzoHsz",
         appKey: "cXfRHqIOpANPfvOcyMEvD1vd",
-        placeholder: "Just go go",
-        pageSize:'10',
+        placeholder: "欢迎留言",
+        pageSize:'8',
         avatar:'mm',
         lang:'zh-cn'
     });
