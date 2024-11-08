@@ -106,6 +106,11 @@
       <a data-url="http://example.com/tags/index.html" data-id="cm2akfu550000nwklbt7f7nr8" data-title="tags" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
+        <a href="/tags/index.html#comments" class="article-comment-link">
+          <span class="post-comments-count valine-comment-count fa fa-comment" data-xid="/tags/index.html" itemprop="commentCount"></span>
+          留言
+        </a>
+      
       
     </footer>
   </div>
@@ -115,6 +120,10 @@
 </article>
 
 
+
+  <section id="comments" class="vcomment">
+
+  </section>
 </section>
         
           <aside id="sidebar">
@@ -222,6 +231,29 @@
 
 
 
+
+  
+<script src="https://cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js"></script>
+
+<script>
+    var GUEST_INFO = ['nick','mail','link'];
+    var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+        return GUEST_INFO.indexOf(item) > -1
+    });
+    var notify = 'false' == true;
+    var verify = 'false' == true;
+    new Valine({
+        el: '.vcomment',
+        notify: notify,
+        verify: verify,
+        appId: "KjhW7EFygYy8jBRziaY4S7tv-gzGzoHsz",
+        appKey: "cXfRHqIOpANPfvOcyMEvD1vd",
+        placeholder: "Just go go",
+        pageSize:'10',
+        avatar:'mm',
+        lang:'zh-cn'
+    });
+</script>
 
   </div>
 </body>
